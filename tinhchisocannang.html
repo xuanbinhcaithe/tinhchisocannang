@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính chỉ số cân nặng</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let weight = parseFloat(prompt("nhập cân nặng của bạn:"));
+        let height =parseFloat(prompt("nhập chiều cao của bạn:"));
+        let chiSo = weight/(height*height);
+        if (chiSo<18.5) {
+            alert("Underweight");
+        } else if ( chiSo>=18.5 && chiSo<25) {
+            alert("Nomal");
+        } else if (chiSo>=25 && chiSo<30) {
+            alert("Overweight");
+        } else {
+            alert("Obese");
+        }
+    </script>
+
+</body>
+</html>
